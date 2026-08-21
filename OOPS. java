@@ -1,0 +1,88 @@
+Class and Object:
+
+class Student {
+
+    String name;
+    int age;
+
+    void display() {
+        System.out.println(name + " " + age);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student();
+
+        s1.name = "Pavan";
+        s1.age = 21;
+
+        s1.display();
+    }
+}
+
+Output:
+
+Pavan 21
+
+
+Encapsulation:
+class Student {
+
+    private int marks;
+
+    public void setMarks(int marks) {
+        this.marks = marks;
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s = new Student();
+
+        s.setMarks(90);
+
+        System.out.println(s.getMarks());
+    }
+}
+Output:
+90
+
+Inheritance:
+class Animal {
+
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+
+        d.eat();
+        d.bark();
+    }
+}
+
+Output:
+Animal is eating
+Dog is barking
+
